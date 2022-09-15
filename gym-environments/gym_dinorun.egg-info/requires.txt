@@ -1,0 +1,7 @@
+gym
+selenium
+numpy
+pillow
+pyvirtualdisplay
+matplotlib
+opencv-python
