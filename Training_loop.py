@@ -7,14 +7,14 @@ from stable_baselines3 import PPO
 def main():
     env = gym.make("DinoRun-v0")
 
-    model = PPO.load('Dino_PPO_440000', env=env)
+    model = PPO.load('Dino_PPO_670000', env=env)
     print('Agent created!')
 
     print("Loop started")
-    for i in range(450000, 1000000, 10000):
+    for i in range(680000, 20000000, 100000):
         print(i)
         # Train the agent
-        model.learn(total_timesteps=10000)
+        model.learn(total_timesteps=100000)
         print("Finished training!")
         # Save the agent
         print("Saving model")
